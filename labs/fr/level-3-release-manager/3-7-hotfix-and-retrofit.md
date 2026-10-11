@@ -5,7 +5,7 @@ description: "Livrez un hotfix Salesforce de preprod vers la production quand la
 level: 3
 lab: 7
 lang: fr
-source_rev: "f18e9094e4929b8d29993a35b27473f7652d2caa"
+source_rev: "e3ae8060a6bf0588628035705fe023145aa5e899"
 screenshots:
   - annotated/salesforce/validation-rule
   - annotated/vscode/welcome-custom-menu-3
@@ -260,9 +260,10 @@ rapport à `preprod`. La pipeline traite `preprod` comme n'importe quelle autre 
 qui en fait un hotfix est la cible, pas un mode.
 
 Le préfixe de branche mérite une seconde de réflexion, pour une raison qui dépasse le rangement : le
-**rework rate** DORA du [Lab 3.6](3-6-release-to-production-and-read-dora-metrics.md) compte les Pull Requests de hotfix, et en reconnaît une à un préfixe
+**Rework** DORA du [Lab 3.6](3-6-release-to-production-and-read-dora-metrics.md) compte les Pull Requests de hotfix, et en reconnaît une à un préfixe
 de branche `hotfix/`, `fix/` ou `bugfix/`. Ce projet appelle ses branches de correction `fix/`,
-celle-ci compte donc.
+celle-ci compte donc, sur la branche dans laquelle elle a été mergée : `preprod`. La livraison qui
+l'emmène ensuite vers `main` vient de `preprod`, donc le **Rework** de `main` ne bouge pas.
 
 **Le retrofit** est du Git de bout en bout, et rien n'est récupéré d'aucune org :
 

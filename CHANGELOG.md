@@ -3,6 +3,13 @@
 What changed in the course, for learners and trainers. The course has no versions: each section is
 a day, newest first, and a change goes under the date of the day it is made.
 
+## 2026-10-11
+
+- Lab 3.6: the DORA metrics are read in the new DORA metrics panel of VS Code, one row per org of the pipeline, then exported as a Markdown report. No default org to set any more: the numbers come from the deployment jobs and the Pull Requests on GitHub.
+- Lab 3.6: new pictures of the gear menu, the Overview, the production tab and the Export menu, showing what a pipeline that released once looks like.
+- Labs 3.5, 3.7, 3.11 and the Level 3 introduction follow the same change. Lab 3.7 says which branch the hotfix counts on.
+- Lab 3.1: the gear menu picture shows the renamed DORA metrics entry.
+
 ## 2026-10-10
 
 - Lab 1.6: the Pull Request window of VS Code is also shown while the check is still running, with the time the job has been going on, and a finished job says how long it took.

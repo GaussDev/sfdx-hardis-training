@@ -5,7 +5,7 @@ description: "Protégez ce que l'UAT garde pour elle avec package-no-overwrite, 
 level: 3
 lab: 5
 lang: fr
-source_rev: "00fdcbbcf343b840d9cbbdfcc9c18e4ee5aecf07"
+source_rev: "e3ae8060a6bf0588628035705fe023145aa5e899"
 screenshots:
   - annotated/vscode/devops-pipeline-level3--create-promotion
   - annotated/vscode/pipeline-branch-modal-level3--what-it-carries
@@ -353,8 +353,7 @@ manquant qu'une livraison vide.
 depuis le commit que sa Pull Request a laissé sur `integration`, commit de merge ou commit unique
 d'un squash indifféremment : c'est pourquoi une Pull Request de feature peut être squashée. Une
 promotion squashée dans `uat` remplacerait tous ces commits par un seul qu'aucune story n'a produit,
-et les notes d'`uat` nommeraient la promotion et rien de ce qu'elle transportait. Le rapport DORA du
-[Lab 3.6](3-6-release-to-production-and-read-dora-metrics.md) s'appuie sur le même lien.
+et les notes d'`uat` nommeraient la promotion et rien de ce qu'elle transportait.
 
 **Une promotion est une Pull Request ordinaire.** Il n'y a pas de machinerie de promotion spéciale
 dans l'installation par défaut : `integration` dans `uat` est une branche mergée dans une autre
