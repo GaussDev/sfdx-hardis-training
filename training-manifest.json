@@ -880,7 +880,12 @@
         "hardis:doc:dora-report",
         "hardis:project:deploy:smart"
       ],
-      "flags": [],
+      "flags": [
+        "--data-only",
+        "--compare",
+        "--period",
+        "--refresh"
+      ],
       "config": [
         "productionBranch",
         "mergeTargets"
@@ -890,11 +895,16 @@
         "hardis/doc/salesforce-devops-dora-report"
       ],
       "panels": [
-        "pipeline"
+        "pipeline",
+        "doraMetrics",
+        "commandExecution"
       ],
       "screenshots": [
         "annotated/vscode/orgs-manager",
-        "annotated/vscode/devops-pipeline--settings-menu"
+        "annotated/vscode/pipeline-settings-menu-level3--dora",
+        "annotated/vscode/dora-metrics",
+        "annotated/vscode/dora-metrics-production",
+        "annotated/vscode/dora-metrics-export-menu"
       ],
       "translations": {
         "fr": {
@@ -1097,7 +1107,8 @@
         "salesforce-devops-setup-checklist"
       ],
       "panels": [
-        "pipeline"
+        "pipeline",
+        "doraMetrics"
       ],
       "screenshots": [
         "annotated/web/github-star-vscode-sfdx-hardis",
@@ -1316,6 +1327,7 @@
         "lab-2-7",
         "lab-2-8",
         "lab-3-1",
+        "lab-3-6",
         "lab-3-10"
       ],
       "backpromote": [
@@ -1340,6 +1352,10 @@
         "lab-3-1",
         "lab-3-4",
         "lab-3-10"
+      ],
+      "doraMetrics": [
+        "lab-3-6",
+        "lab-3-11"
       ],
       "monitoringConfig": [
         "lab-3-8"

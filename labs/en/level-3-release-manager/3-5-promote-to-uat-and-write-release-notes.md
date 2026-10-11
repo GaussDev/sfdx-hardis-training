@@ -336,7 +336,7 @@ with nothing in it. An empty release note is more often a missing token than an 
 Pull Request left on `integration`, a merge commit or the single commit of a squash alike: that is
 why a feature Pull Request can be squashed. A promotion squashed into `uat` would replace all of
 those commits by one that no story produced, and the notes of `uat` would name the promotion and
-nothing it carried. The DORA report in [Lab 3.6](3-6-release-to-production-and-read-dora-metrics.md) leans on the same link.
+nothing it carried.
 
 **A promotion is an ordinary Pull Request.** There is no special promotion machinery in the default
 setup: `integration` into `uat` is a branch merged into another branch, and the deployment job on
